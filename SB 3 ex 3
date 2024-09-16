@@ -1,0 +1,17 @@
+#include <iostream>
+#include <fstream>
+std::string nume="bac.txt";
+std::ifstream fin(nume);
+
+int main()
+{
+    int x,y,nr=0;
+    fin>>x;
+    while(fin>>y)
+    {
+        if(x<=y)nr++;
+    }
+    std::cout<<nr+1;
+    return 0;
+}
+citim valoarea primului nr separat si o stocam intro variabila x dupa care citim restul valorile ,iar daca un nr este mai mare decat x atunci contorizam in variabila nr.Dupa citire se afiseaza valoare numarului nr+1  
